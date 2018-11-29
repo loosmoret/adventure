@@ -1,3 +1,275 @@
+/* Fonts */
+
+/* latin */
+@font-face {
+  font-family: 'Allerta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Allerta Regular'), local('Allerta-Regular'), url(https://fonts.gstatic.com/s/allerta/v8/u8DhtLr8_kF32qKQjYheCwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Allerta';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Allerta Regular'), local('Allerta-Regular'), url(https://fonts.gstatic.com/s/allerta/v8/u8DhtLr8_kF32qKQjYheCwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/3IFMwfRa07i-auYR-B-zNRampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: "Allerta", serif;
+    height: 100%;
+}
+
+button {
+  font-family: "Crimson", serif;
+  font-size: 1rem;
+}
+
+img{
+  width: 100%;
+}
+
+h1,h2,h3{
+  color: #c0b283;
+  font-family: Allerta;
+}
+
+P{
+  color: #373737;
+  line-height: 1.2em;
+  max-width: 100%;
+}
+
 h1 {
-  color: red
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem 0rem;
+  max-width: 100%;
+}
+
+h2{
+  font-size: 1.2rem;
+  padding: 1rem 0rem
+}
+
+h3 {
+  padding-bottom: 0.2rem;
+  font-size: 1.2rem;
+}
+
+/* header*/
+
+.desktop-nav{
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+}
+
+.desktop-nav div{
+  display: flex;
+}
+
+.desktop-nav div div{
+  display: flex;
+  justify-content: center;
+}
+
+header a{
+  text-decoration: none;
+  color: #c0b283;
+  font-family: Allerta;
+  padding: 1rem;
+}
+
+
+/*header mobile*/
+@media only screen and (max-width:550px) {
+
+.main-banner{
+  display: none;
+}
+
+.desktop-nav{
+  display: none;
+}
+
+}
+
+/*blog-posts-1*/
+
+.featured-blogs-1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blog-posts-1{
+  min-height: 10rem;
+  max-width: 30%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.blog-posts-1 div img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-posts-1 a{
+  display: block;
+  margin: 0.7rem 0.7rem 0.7rem 0rem;
+  border-left: 2px solid #c0b283;
+  padding-left: 0.7rem;
+  text-decoration: none;
+  font-family: "allerta", Serif;
+  color: #373737;
+}
+
+/*blog-posts-1-mobile*/
+@media only screen and (max-width:550px) {
+  .featured-blogs-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-posts-1{
+    min-height: 10rem;
+    max-width: 95%;
+    flex-grow: 1;
+    overflow: hidden;
+  }
+}
+/*text*/
+
+.text {
+  display: flex;
+  margin-top: 1.5rem;
+  }
+
+.text-box{
+  display: flex;
+  flex-direction: column;
+}
+
+.text-box h2{
+  padding: 0rem 0rem 1rem 0rem;
+}
+
+
+
+/*section2*/
+
+.section2{
+  display: inline-flex;
+  width:100%;
+  justify-content: space-evenly;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.section2-blogs{
+  width: 62.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.category-title h1{
+  border-left: 2px solid #c0b283;
+  padding: 0rem 0rem 0rem 0.7rem;
+  margin: 1rem 0rem;
+}
+
+.section2-blogs-container{
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.blog-posts-2 {
+  min-height: 10rem;
+  max-width: 48%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.blog-posts-2 div img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.sidebar{
+  width: 30%;
+  flex-direction: column;
+  display: flex;
+}
+
+/*section 2*/
+@media only screen and (max-width:550px) {
+
+    .section2{
+      display:flex;
+      flex-direction: column;
+      width:100%;
+      align-items: center;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .section2-blogs{
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .section2-blogs-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .blog-posts-2 {
+      max-width: 100%;
+      min-height: 0rem;
+    }
+
+    .blog-posts-2 div img{
+      display: none;
+    }
+
+    .sidebar{
+      width: 95%;
+    }
+
+  }
+
+/*Instagram*/
+
+.instagram {
+  height: 10rem;
+  background-color: #373737;
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
 }
