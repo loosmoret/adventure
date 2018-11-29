@@ -101,7 +101,7 @@ header a{
 
 
 /*header mobile*/
-@media only screen and (max-width:550px) {
+@media screen and (max-width:550px) {
 
 .main-banner{
   display: none;
@@ -144,7 +144,7 @@ header a{
 }
 
 /*blog-posts-1-mobile*/
-@media only screen and (max-width:550px) {
+@media screen and (max-width:550px) {
   .featured-blogs-1 {
     display: flex;
     flex-direction: column;
@@ -226,7 +226,7 @@ header a{
 }
 
 /*section 2*/
-@media only screen and (max-width:550px) {
+@media screen and (max-width:550px) {
 
     .section2{
       display:flex;
